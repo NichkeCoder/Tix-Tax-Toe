@@ -12,23 +12,23 @@
 
 ---
 
-## General info  
-* An adjustable Tic-Tac-Toe  
-* Customizable table width/height  
-* Customizable win row length  
-* Modern Design  
+## General info
+* An adjustable Tic-Tac-Toe
+* Customizable table width/height
+* Customizable win row length
+* Modern Design
 * Fixed size (keeps width/height at 500px, while maintaining aspect ratio)
 
 ---
 
 ## Installation  
-1. Download Microsoft Visual Studio (not Code)  
+1. Download Microsoft Visual Studio (not Code)
 2. Pull project and open solution in Visual Studio
 
 ---
 
 ## Technologies  
-* C#  
+* C#
 * WinForms
 
 
