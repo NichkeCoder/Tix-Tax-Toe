@@ -19,6 +19,8 @@
 * Modern Design
 * Fixed size (keeps width/height at 500px, while maintaining aspect ratio)
 
+![running](http://g.recordit.co/RMFGVj2QSD.gif)
+
 ---
 
 ## Installation  
@@ -30,7 +32,6 @@
 ## Technologies  
 * C#
 * WinForms
-
 
 ---
 
