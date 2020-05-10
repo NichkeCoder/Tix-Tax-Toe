@@ -20,3 +20,14 @@ D:\Personal\Projects\Resume\Complete\TixTaxToe\obj\Debug\TixTaxToe.csproj.Genera
 D:\Personal\Projects\Resume\Complete\TixTaxToe\obj\Debug\TixTaxToe.csproj.CoreCompileInputs.cache
 D:\Personal\Projects\Resume\Complete\TixTaxToe\obj\Debug\TixTaxToe.exe
 D:\Personal\Projects\Resume\Complete\TixTaxToe\obj\Debug\TixTaxToe.pdb
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.csprojAssemblyReference.cache
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.GridSize.resources
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.MainForm.resources
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.Properties.Resources.resources
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.csproj.GenerateResource.cache
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.csproj.CoreCompileInputs.cache
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.exe
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\obj\Debug\TixTaxToe.pdb
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\bin\Debug\TixTaxToe.exe.config
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\bin\Debug\TixTaxToe.exe
+D:\Personal\Projects\Repos\TixTaxToe\TixTaxToe\bin\Debug\TixTaxToe.pdb

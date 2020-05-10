@@ -24,11 +24,11 @@ namespace TixTaxToe
         public int x = 3;
         public int y = 3;
 
-        List<List<Button>> fields = new List<List<Button>>();
-        Dictionary<Button, int> fieldPos = new Dictionary<Button, int>();
+        public List<List<Field>> fields = new List<List<Field>>();
+        public Dictionary<Field, int> fieldPos = new Dictionary<Field, int>();
 
-        int turn = 1;
-        int count = 0;
+        public int turn = 1;
+        public int count = 0;
         public int winRow = 3;
         public bool gridChanged = false;
 
@@ -47,23 +47,14 @@ namespace TixTaxToe
             int len = 500 / (int)Math.Max(x, y);
             for (int i = 0; i < y; i++)
             {
-                List<Button> temp = new List<Button>();
+                List<Field> temp = new List<Field>();
                 for (int j = 0; j < x; j++)
                 {
-                    Button field = new Button();
-                    field.Text = "";
-                    field.Location = new Point(locX, locY);
-                    field.Size = new Size(len, len);
-                    field.TabStop = false;
-                    field.FlatStyle = FlatStyle.Flat;
-                    field.FlatAppearance.BorderSize = 0;
-                    field.Click += field_click;
-                    field.Font = new Font(field.Font.FontFamily, (int)((8.0 / 20) * len), FontStyle.Bold);
-
+                    Field field = new Field(this, len, locX, locY);
+                    
                     temp.Add(field);
                     fieldPos.Add(field, i * x + j);
                     this.Controls.Add(field);
-
                     locX += len;
                 }
                 locX = startX;
@@ -78,7 +69,7 @@ namespace TixTaxToe
             this.CenterToScreen();
         }
 
-        private void ClearTable()
+        public void ClearTable()
         {
             count = 0;
             turn = 1;
@@ -92,37 +83,7 @@ namespace TixTaxToe
             this.Text = "TixTaxToe ~ X";
         }
 
-        private void field_click(object sender, EventArgs e)
-        {
-            Button fieldBut = (Button)sender;
-            if (fieldBut.Text != "") return;
-
-            if (turn == 1)
-            {
-                fieldBut.Text = "X";
-                this.Text = "TixTaxToe ~ O";
-            }
-            else
-            {
-                fieldBut.Text = "O";
-                this.Text = "TixTaxToe ~ X";
-            }
-            turn *= -1;
-            count++;
-
-            if (Check(fieldPos[fieldBut] % x, fieldPos[fieldBut] / x, fieldBut.Text, 0) >= winRow)
-            {
-                MessageBox.Show("Player " + fieldBut.Text + " wins!");
-                ClearTable();
-            }
-            else if (count == x * y)
-            {
-                MessageBox.Show("Tie!");
-                ClearTable();
-            }
-        }
-
-        private double Check(int tx, int ty, string comp, int dir)
+        public double Check(int tx, int ty, string comp, int dir)
         {
             if (tx < 0 || ty < 0 || tx >= x || ty >= y || fields[ty][tx].Text.ToString() != comp) return 0;
             if (dir == 0)
